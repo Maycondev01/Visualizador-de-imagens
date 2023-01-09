@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #D8F7FF;
+    font-family: sans-serif;
+}
+
+img {
+    margin: 20px auto 10px auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+.label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #dddddd;
+    display: inline-block;
+}
+ .label:hover {
+    background: #00B7E6;
+ }
+ .label:active {
+    background: #9fa1a0;
+ }
+ .label:invalid + span {
+    color: #000000;
+ }
+ .label:valid + span {
+    color: #ffffff;
+ }
